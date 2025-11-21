@@ -1,0 +1,569 @@
+/* Atomic Design System for TGS */
+
+/* Color System */
+.atomic-primary {
+    color: var(--primary);
+}
+
+.atomic-secondary {
+    color: var(--secondary);
+}
+
+.atomic-accent {
+    color: var(--accent);
+}
+
+.atomic-dark {
+    color: var(--dark);
+}
+
+.atomic-light {
+    color: var(--light);
+}
+
+/* Background System */
+.atomic-bg-primary {
+    background: var(--primary);
+}
+
+.atomic-bg-secondary {
+    background: var(--secondary);
+}
+
+.atomic-bg-accent {
+    background: var(--accent);
+}
+
+.atomic-bg-dark {
+    background: var(--dark);
+}
+
+.atomic-bg-glass {
+    background: var(--glass);
+}
+
+/* Gradient System */
+.atomic-gradient {
+    background: var(--gradient);
+}
+
+.atomic-gradient-text {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Typography Scale */
+.atomic-display-1 {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.atomic-display-2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.atomic-heading-1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.atomic-heading-2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.atomic-heading-3 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.atomic-body-large {
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+.atomic-body {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.atomic-body-small {
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+/* Spacing Scale */
+.atomic-space-xs {
+    margin: 0.5rem;
+}
+
+.atomic-space-sm {
+    margin: 1rem;
+}
+
+.atomic-space-md {
+    margin: 1.5rem;
+}
+
+.atomic-space-lg {
+    margin: 2rem;
+}
+
+.atomic-space-xl {
+    margin: 3rem;
+}
+
+.atomic-padding-xs {
+    padding: 0.5rem;
+}
+
+.atomic-padding-sm {
+    padding: 1rem;
+}
+
+.atomic-padding-md {
+    padding: 1.5rem;
+}
+
+.atomic-padding-lg {
+    padding: 2rem;
+}
+
+.atomic-padding-xl {
+    padding: 3rem;
+}
+
+/* Border Radius */
+.atomic-radius-sm {
+    border-radius: 0.5rem;
+}
+
+.atomic-radius-md {
+    border-radius: 1rem;
+}
+
+.atomic-radius-lg {
+    border-radius: 1.5rem;
+}
+
+.atomic-radius-xl {
+    border-radius: 2rem;
+}
+
+.atomic-radius-full {
+    border-radius: 50%;
+}
+
+/* Shadow System */
+.atomic-shadow-sm {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.atomic-shadow-md {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.atomic-shadow-lg {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.atomic-shadow-xl {
+    box-shadow: var(--shadow);
+}
+
+/* Glass Morphism */
+.atomic-glass {
+    background: var(--glass);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border);
+}
+
+.atomic-glass-light {
+    background: var(--glass-light);
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--border);
+}
+
+/* Button System */
+.atomic-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.atomic-btn-primary {
+    background: var(--gradient);
+    color: var(--white);
+}
+
+.atomic-btn-secondary {
+    background: transparent;
+    color: var(--text);
+    border: 2px solid var(--primary);
+}
+
+.atomic-btn-outline {
+    background: transparent;
+    color: var(--text);
+    border: 2px solid var(--border);
+}
+
+/* Card System */
+.atomic-card {
+    background: var(--glass);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    transition: var(--transition);
+}
+
+.atomic-card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+
+/* Grid System */
+.atomic-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.atomic-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.atomic-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.atomic-grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Flex System */
+.atomic-flex {
+    display: flex;
+}
+
+.atomic-flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.atomic-flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.atomic-flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Animation Classes */
+.atomic-fade-in {
+    animation: fadeIn 0.5s ease;
+}
+
+.atomic-slide-up {
+    animation: slideInUp 0.5s ease;
+}
+
+.atomic-slide-left {
+    animation: slideInLeft 0.5s ease;
+}
+
+.atomic-slide-right {
+    animation: slideInRight 0.5s ease;
+}
+
+.atomic-bounce {
+    animation: bounceIn 0.5s ease;
+}
+
+/* Utility Classes */
+.atomic-text-center {
+    text-align: center;
+}
+
+.atomic-text-left {
+    text-align: left;
+}
+
+.atomic-text-right {
+    text-align: right;
+}
+
+.atomic-mt-0 {
+    margin-top: 0;
+}
+
+.atomic-mt-1 {
+    margin-top: 0.5rem;
+}
+
+.atomic-mt-2 {
+    margin-top: 1rem;
+}
+
+.atomic-mt-3 {
+    margin-top: 1.5rem;
+}
+
+.atomic-mt-4 {
+    margin-top: 2rem;
+}
+
+.atomic-mb-0 {
+    margin-bottom: 0;
+}
+
+.atomic-mb-1 {
+    margin-bottom: 0.5rem;
+}
+
+.atomic-mb-2 {
+    margin-bottom: 1rem;
+}
+
+.atomic-mb-3 {
+    margin-bottom: 1.5rem;
+}
+
+.atomic-mb-4 {
+    margin-bottom: 2rem;
+}
+
+.atomic-hidden {
+    display: none;
+}
+
+.atomic-block {
+    display: block;
+}
+
+.atomic-inline-block {
+    display: inline-block;
+}
+
+/* Responsive Atomic Classes */
+@media (max-width: 768px) {
+
+    .atomic-grid-2,
+    .atomic-grid-3,
+    .atomic-grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .atomic-display-1 {
+        font-size: 3rem;
+    }
+
+    .atomic-display-2 {
+        font-size: 2.5rem;
+    }
+
+    .atomic-heading-1 {
+        font-size: 2.25rem;
+    }
+
+    .atomic-heading-2 {
+        font-size: 2rem;
+    }
+}
+
+/* Component Variants */
+.atomic-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(15, 15, 27, 0.95);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    z-index: 1000;
+}
+
+.atomic-hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.atomic-section {
+    padding: 6rem 0;
+    position: relative;
+}
+
+.atomic-footer {
+    background: var(--dark-light);
+    padding: 4rem 0 2rem;
+    border-top: 1px solid var(--border);
+}
+
+/* Icon System */
+.atomic-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.atomic-icon-sm {
+    width: 1rem;
+    height: 1rem;
+}
+
+.atomic-icon-md {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.atomic-icon-lg {
+    width: 2rem;
+    height: 2rem;
+}
+
+.atomic-icon-xl {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Form Elements */
+.atomic-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--border);
+    border-radius: 0.5rem;
+    background: transparent;
+    color: var(--text);
+    transition: var(--transition);
+}
+
+.atomic-input:focus {
+    border-color: var(--primary);
+    outline: none;
+}
+
+.atomic-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+    font-weight: 500;
+}
+
+/* Badge System */
+.atomic-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem 0.75rem;
+    background: var(--glass);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.atomic-badge-primary {
+    background: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+}
+
+.atomic-badge-secondary {
+    background: var(--secondary);
+    color: var(--white);
+    border-color: var(--secondary);
+}
+
+/* Progress System */
+.atomic-progress {
+    width: 100%;
+    height: 0.5rem;
+    background: var(--dark-lighter);
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+
+.atomic-progress-bar {
+    height: 100%;
+    background: var(--gradient);
+    border-radius: 0.25rem;
+    transition: width 0.3s ease;
+}
+
+/* Tooltip System */
+.atomic-tooltip {
+    position: relative;
+}
+
+.atomic-tooltip::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5rem 0.75rem;
+    background: var(--dark);
+    color: var(--text);
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+    z-index: 1000;
+}
+
+.atomic-tooltip:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Loading States */
+.atomic-loading {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid var(--border);
+    border-top: 2px solid var(--primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.atomic-skeleton {
+    background: linear-gradient(90deg, var(--dark-lighter) 25%, var(--dark-light) 50%, var(--dark-lighter) 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}

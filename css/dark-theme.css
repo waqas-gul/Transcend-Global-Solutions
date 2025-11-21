@@ -1,0 +1,187 @@
+/* Dark Theme Specific Styles */
+[data-theme="dark"] {
+    --primary: #6366f1;
+    --primary-dark: #4f46e5;
+    --secondary: #10b981;
+    --secondary-dark: #059669;
+    --accent: #f59e0b;
+    --accent-dark: #d97706;
+    --dark: #0f172a;
+    --dark-light: #1e293b;
+    --dark-lighter: #334155;
+    --light: #f8fafc;
+    --text: #e2e8f0;
+    --text-muted: #94a3b8;
+    --white: #ffffff;
+    --shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    --shadow-light: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+    --glass: rgba(15, 23, 42, 0.7);
+    --glass-light: rgba(30, 41, 59, 0.5);
+    --border: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="light"] {
+    --primary: #4f46e5;
+    --primary-dark: #4338ca;
+    --secondary: #059669;
+    --secondary-dark: #047857;
+    --accent: #d97706;
+    --accent-dark: #b45309;
+    --dark: #f8fafc;
+    --dark-light: #f1f5f9;
+    --dark-lighter: #e2e8f0;
+    --light: #0f172a;
+    --text: #334155;
+    --text-muted: #64748b;
+    --white: #ffffff;
+    --shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+    --shadow-light: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    --glass: rgba(255, 255, 255, 0.7);
+    --glass-light: rgba(255, 255, 255, 0.5);
+    --border: rgba(0, 0, 0, 0.1);
+}
+
+/* Theme transition for smooth switching */
+body {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Theme toggle button styles */
+.theme-toggle {
+    position: relative;
+    overflow: hidden;
+}
+
+.theme-toggle i {
+    transition: transform 0.5s ease;
+}
+
+[data-theme="dark"] .theme-toggle .fa-sun {
+    display: none;
+}
+
+[data-theme="dark"] .theme-toggle .fa-moon {
+    display: block;
+}
+
+[data-theme="light"] .theme-toggle .fa-sun {
+    display: block;
+}
+
+[data-theme="light"] .theme-toggle .fa-moon {
+    display: none;
+}
+
+/* Light theme specific adjustments */
+[data-theme="light"] body {
+    background-image:
+        radial-gradient(at 10% 20%, rgba(79, 70, 229, 0.05) 0px, transparent 50%),
+        radial-gradient(at 90% 80%, rgba(5, 150, 105, 0.05) 0px, transparent 50%);
+}
+
+[data-theme="light"] .navbar {
+    background: rgba(248, 250, 252, 0.8);
+    border-bottom: 1px solid var(--border);
+}
+
+[data-theme="light"] .expertise,
+[data-theme="light"] .services,
+[data-theme="light"] .sectors,
+[data-theme="light"] .team,
+[data-theme="light"] .footer {
+    background: var(--dark-light);
+}
+
+[data-theme="light"] .hero {
+    background: linear-gradient(135deg, rgba(79, 70, 229, 0.03) 0%, rgba(5, 150, 105, 0.03) 100%);
+}
+
+[data-theme="light"] .expertise-card,
+[data-theme="light"] .edge-card,
+[data-theme="light"] .sector-item,
+[data-theme="light"] .goal-item,
+[data-theme="light"] .team-member,
+[data-theme="light"] .value-item,
+[data-theme="light"] .vm-card,
+[data-theme="light"] .tab-content,
+[data-theme="light"] .contact-form,
+[data-theme="light"] .floating-card,
+[data-theme="light"] .leader-card {
+    background: var(--glass);
+    border: 1px solid var(--border);
+}
+
+[data-theme="light"] .form-group input,
+[data-theme="light"] .form-group textarea {
+    background: transparent;
+    color: var(--text);
+}
+
+[data-theme="light"] .form-group label {
+    background: var(--dark);
+}
+
+/* Enhanced focus states for light theme */
+[data-theme="light"] .form-group input:focus,
+[data-theme="light"] .form-group textarea:focus {
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+/* Improved contrast for light theme */
+[data-theme="light"] .hero-subtitle,
+[data-theme="light"] .hero-text,
+[data-theme="light"] .expertise-card p,
+[data-theme="light"] .edge-card p,
+[data-theme="light"] .goal-item p,
+[data-theme="light"] .team-member p,
+[data-theme="light"] .value-item p,
+[data-theme="light"] .tab-pane p,
+[data-theme="light"] .contact-item p,
+[data-theme="light"] .footer-tagline,
+[data-theme="light"] .footer-column a,
+[data-theme="light"] .footer-bottom {
+    color: var(--text-muted);
+}
+
+/* Theme-specific particle colors */
+[data-theme="dark"] .particle {
+    background: var(--gradient);
+}
+
+[data-theme="light"] .particle {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+
+/* Theme-specific loading screen */
+[data-theme="dark"] .loading {
+    background: var(--dark);
+}
+
+[data-theme="light"] .loading {
+    background: var(--dark);
+}
+
+/* Theme transition for all interactive elements */
+.btn,
+.nav-link,
+.theme-toggle,
+.social-links a,
+.tab-button,
+.expertise-card,
+.edge-card,
+.sector-item,
+.goal-item,
+.team-member,
+.value-item,
+.vm-card,
+.floating-card {
+    transition: all 0.5s ease;
+}
+
+/* Smooth theme transition for background elements */
+.animated-bg,
+.particle,
+.floating-icon,
+.hero-orb {
+    transition: all 0.5s ease;
+}

@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcend Global Solutions | Bridging Global Capital, Innovation, and Africa's Potential</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" data-scroll-progress data-scroll-start="0" data-scroll-end="10000"></div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="logo-orb large" data-animate="scale-up">
+                <div class="logo-core"></div>
+                <div class="logo-ring"></div>
+                <div class="logo-particle"></div>
+            </div>
+            <h2 data-animate="fade-in" data-animate-delay="0.3s">Transcend Global Solutions</h2>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="particle-system" id="particleSystem"></div>
+        <div class="floating-particle particle-1" data-parallax data-parallax-speed="0.3"></div>
+        <div class="floating-particle particle-2" data-parallax data-parallax-speed="0.5"></div>
+        <div class="floating-particle particle-3" data-parallax data-parallax-speed="0.4"></div>
+        <div class="floating-particle particle-4" data-parallax data-parallax-speed="0.6"></div>
+        <div class="floating-icon floating-icon-1" data-parallax data-parallax-speed="0.2">🌍</div>
+        <div class="floating-icon floating-icon-2" data-parallax data-parallax-speed="0.3">💼</div>
+        <div class="floating-icon floating-icon-3" data-parallax data-parallax-speed="0.4">♻️</div>
+        <div class="floating-icon floating-icon-4" data-parallax data-parallax-speed="0.5">🤖</div>
+        <div class="connection-lines" data-parallax data-parallax-speed="0.1"></div>
+    </div>
+
+    <!-- Advanced Navigation -->
+    <nav class="navbar" id="navbar" data-sticky data-sticky-start="0">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" data-animate="slide-left">
+                <div class="logo-orb">
+                    <div class="logo-core"><img src="./images/logo.png"></div>
+                    <div class="logo-ring"></div>
+                    <div class="logo-particle"></div>
+                </div>
+                <span class="logo-text">Transcend Global</span>
+            </a>
+
+            <div class="nav-menu" id="navMenu">
+                <div class="nav-links" data-stagger-group data-stagger-delay="0.1">
+                    <a href="#home" class="nav-link active" data-text="Home" data-stagger-item data-animate="fade-in">
+                        <span class="link-text">Home</span>
+                        <div class="link-underline"></div>
+                    </a>
+                    <a href="#about" class="nav-link" data-text="About" data-stagger-item data-animate="fade-in">
+                        <span class="link-text">About</span>
+                        <div class="link-underline"></div>
+                    </a>
+                    <a href="#services" class="nav-link" data-text="Services" data-stagger-item data-animate="fade-in">
+                        <span class="link-text">Services</span>
+                        <div class="link-underline"></div>
+                    </a>
+                    <a href="#why-choose" class="nav-link" data-text="Why Choose Us" data-stagger-item
+                        data-animate="fade-in">
+                        <span class="link-text">Why Choose Us</span>
+                        <div class="link-underline"></div>
+                    </a>
+                    <a href="#impact" class="nav-link" data-text="Impact" data-stagger-item data-animate="fade-in">
+                        <span class="link-text">Impact</span>
+                        <div class="link-underline"></div>
+                    </a>
+                    <a href="#team" class="nav-link" data-text="Team" data-stagger-item data-animate="fade-in">
+                        <span class="link-text">Team</span>
+                        <div class="link-underline"></div>
+                    </a>
+                    <a href="#contact" class="nav-link" data-text="Contact" data-stagger-item data-animate="fade-in">
+                        <span class="link-text">Contact</span>
+                        <div class="link-underline"></div>
+                    </a>
+                </div>
+
+                <div class="nav-actions" data-animate="slide-right">
+                    <button class="theme-toggle" id="themeToggle" data-tilt>
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <a href="#contact" class="btn btn-nav magnetic-btn">Get Started</a>
+                </div>
+            </div>
+
+            <!-- Replace the existing nav-toggle div with this -->
+            <div class="nav-toggle" id="navToggle">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-glow" data-parallax data-parallax-speed="0.8"></div>
+            <div class="hero-particles"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-grid">
+                <!-- Left Column - Content -->
+                <div class="hero-content">
+                    <div class="hero-badge" data-animate="slide-down" data-animate-delay="0.1s">
+                        <span>Transforming Africa's Future</span>
+                        <div class="badge-pulse"></div>
+                    </div>
+
+                    <h1 class="hero-title" data-animate="fade-in" data-animate-delay="0.3s">
+                        <span class="title-line">Transforming How the World</span>
+                        <span class="title-line highlight">Engages with Africa</span>
+                    </h1>
+
+                    <p class="hero-subtitle" data-animate="fade-in" data-animate-delay="0.7s">
+                        Transcend Global Solutions (TGS) Inc. is a Washington, D.C.–based foreign relations,
+                        business advisory, and strategic partnership consulting firm revolutionizing engagement
+                        between global markets and emerging African economies.
+                    </p>
+
+                    <p class="hero-text" data-animate="fade-in" data-animate-delay="0.9s">
+                        We connect global capital, innovation, and expertise with Africa's development priorities —
+                        empowering governments, investors, and businesses to build resilient, inclusive, and sustainable
+                        growth models.
+                    </p>
+
+
+
+
+
+                    <div class="hero-actions" data-animate="fade-in" data-animate-delay="1.3s">
+                        <a href="#contact" class="btn btn-primary ripple">
+                            <span>Start Partnership</span>
+                            <div class="btn-shine"></div>
+                        </a>
+                        <a href="#about" class="btn btn-secondary magnetic-btn">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column - Visual -->
+                <div class="hero-visual">
+                    <div class="globe-container" data-tilt>
+                        <div class="globe" data-rotate-on-scroll>
+                            <div class="globe-inner">
+                                <div class="africa-map"><img src="./images/logo.png"></div>
+                            </div>
+                            <div class="globe-ring"></div>
+                            <div class="connection-dots">
+                                <div class="dot dot-1" data-parallax data-parallax-speed="0.3"></div>
+                                <div class="dot dot-2" data-parallax data-parallax-speed="0.4"></div>
+                                <div class="dot dot-3" data-parallax data-parallax-speed="0.5"></div>
+                                <div class="dot dot-4" data-parallax data-parallax-speed="0.6"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="floating-elements">
+                        <div class="float-card card-1" data-animate="slide-right" data-animate-delay="0.5s">
+                            <i class="fas fa-handshake"></i>
+                            <h4>Strategic Partnerships</h4>
+                        </div>
+                        <div class="float-card card-2" data-animate="slide-right" data-animate-delay="0.7s">
+                            <i class="fas fa-chart-line"></i>
+                            <h4>Economic Growth</h4>
+                        </div>
+                        <div class="float-card card-3" data-animate="slide-right" data-animate-delay="0.9s">
+                            <i class="fas fa-globe-africa"></i>
+                            <h4>African Markets</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-stats" data-stagger-group data-stagger-delay="0.2s">
+                <div class="stat-item" data-stagger-item data-animate="scale-up">
+                    <div class="stat-number" data-count="50">0</div>
+                    <div class="stat-label">Countries Served</div>
+                </div>
+                <div class="stat-item" data-stagger-item data-animate="scale-up">
+                    <div class="stat-number" data-count="500">0</div>
+                    <div class="stat-label">Million+ Investments</div>
+                </div>
+                <div class="stat-item" data-stagger-item data-animate="scale-up">
+                    <div class="stat-number" data-count="10000">0</div>
+                    <div class="stat-label">Jobs Created</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator" data-animate="fade-in" data-animate-delay="1.5s">
+            <div class="scroll-line"></div>
+            <span>Scroll to Explore</span>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section class="expertise">
+        <div class="container">
+            <div class="section-header" data-animate="fade-in">
+                <h2 class="section-title">Our Expertise Includes</h2>
+                <p class="section-subtitle">Comprehensive solutions for Africa's development challenges</p>
+            </div>
+
+            <div class="expertise-grid" data-stagger-group data-stagger-delay="0.1s">
+                <div class="expertise-card" data-stagger-item data-animate="scale-up" data-delay="0">
+                    <div class="card-icon">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <h3>Policy Advisory & Public Diplomacy</h3>
+                    <p>Strategic guidance for governments navigating international relations and policy frameworks.</p>
+                    <div class="card-glow"></div>
+                </div>
+
+                <div class="expertise-card" data-stagger-item data-animate="scale-up" data-delay="100">
+                    <div class="card-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Business Facilitation & Market Entry</h3>
+                    <p>Seamless market entry strategies for businesses expanding into African markets.</p>
+                    <div class="card-glow"></div>
+                </div>
+
+                <div class="expertise-card" data-stagger-item data-animate="scale-up" data-delay="200">
+                    <div class="card-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Climate-Smart & ESG Solutions</h3>
+                    <p>Sustainable development strategies aligned with environmental and social goals.</p>
+                    <div class="card-glow"></div>
+                </div>
+
+                <div class="expertise-card" data-stagger-item data-animate="scale-up" data-delay="300">
+                    <div class="card-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI-Powered Data & Risk Analytics</h3>
+                    <p>Cutting-edge analytics for informed decision-making in emerging markets.</p>
+                    <div class="card-glow"></div>
+                </div>
+
+                <div class="expertise-card" data-stagger-item data-animate="scale-up" data-delay="400">
+                    <div class="card-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Strategic Communications & Brand Positioning</h3>
+                    <p>Building compelling narratives that resonate across global audiences.</p>
+                    <div class="card-glow"></div>
+                </div>
+            </div>
+
+            <div class="expertise-cta" data-animate="fade-in" data-animate-delay="0.5s">
+                <p>Join us in shaping the next frontier of global partnership.</p>
+                <a href="#contact" class="btn btn-primary magnetic-btn">Contact Us <i
+                        class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-header" data-animate="slide-left">
+                        <h2 class="section-title">Who We Are</h2>
+                        <p class="section-subtitle">Redefining Africa's global engagement</p>
+                    </div>
+
+                    <p class="about-description" data-animate="fade-in" data-animate-delay="0.2s">
+                        Transcend Global Solutions (TGS) Inc. is redefining how the world engages with Africa.
+                        We bring together a team of experienced policy experts, business strategists, technologists,
+                        and diaspora leaders with decades of combined experience in international development,
+                        trade, diplomacy, and sustainable investment.
+                    </p>
+
+                    <div class="vision-mission" data-stagger-group data-stagger-delay="0.1s">
+                        <div class="vm-card" data-stagger-item data-animate="scale-up">
+                            <div class="vm-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <h4>Our Vision</h4>
+                            <p>To become the premier gateway connecting global capital, innovation, and expertise with
+                                Africa's emerging markets, creating transformative partnerships that drive inclusive
+                                economic growth and sustainable development.</p>
+                        </div>
+
+                        <div class="vm-card" data-stagger-item data-animate="scale-up">
+                            <div class="vm-icon">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <h4>Our Mission</h4>
+                            <p>To empower African countries, businesses, and diaspora investors by facilitating
+                                strategic partnerships, providing expert policy guidance, and deploying innovative
+                                climate-smart and AI-driven solutions that unlock Africa's economic potential.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-values" data-animate="slide-right">
+                    <h3>Our Core Values</h3>
+                    <div class="values-list" data-stagger-group data-stagger-delay="0.1s">
+                        <div class="value-item" data-stagger-item data-animate="fade-in">
+                            <div class="value-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="value-content">
+                                <h4>Integrity</h4>
+                                <p>We lead with transparency and accountability.</p>
+                            </div>
+                        </div>
+                        <div class="value-item" data-stagger-item data-animate="fade-in">
+                            <div class="value-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div class="value-content">
+                                <h4>Innovation</h4>
+                                <p>We apply technology to solve complex challenges.</p>
+                            </div>
+                        </div>
+                        <div class="value-item" data-stagger-item data-animate="fade-in">
+                            <div class="value-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="value-content">
+                                <h4>Inclusivity</h4>
+                                <p>We connect global opportunity with African talent.</p>
+                            </div>
+                        </div>
+                        <div class="value-item" data-stagger-item data-animate="fade-in">
+                            <div class="value-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="value-content">
+                                <h4>Sustainability</h4>
+                                <p>We align progress with environmental stewardship.</p>
+                            </div>
+                        </div>
+                        <div class="value-item" data-stagger-item data-animate="fade-in">
+                            <div class="value-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="value-content">
+                                <h4>Excellence</h4>
+                                <p>We exceed expectations in every engagement.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header" data-animate="fade-in">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive solutions for sustainable development</p>
+            </div>
+
+            <div class="services-tabs">
+                <div class="tab-buttons" data-stagger-group data-stagger-delay="0.05s">
+                    <button class="tab-button active" data-tab="policy" data-stagger-item data-animate="slide-down">
+                        Policy Advisory
+                    </button>
+                    <button class="tab-button" data-tab="communications" data-stagger-item data-animate="slide-down">
+                        Strategic Communications
+                    </button>
+                    <button class="tab-button" data-tab="business" data-stagger-item data-animate="slide-down">
+                        Business Facilitation
+                    </button>
+                    <button class="tab-button" data-tab="climate" data-stagger-item data-animate="slide-down">
+                        Climate & ESG
+                    </button>
+                    <button class="tab-button" data-tab="ai" data-stagger-item data-animate="slide-down">
+                        AI & Analytics
+                    </button>
+                    <button class="tab-button" data-tab="training" data-stagger-item data-animate="slide-down">
+                        Training & Development
+                    </button>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="policy" data-animate="fade-in">
+                        <h3>Policy Advisory & Government Relations</h3>
+                        <p>We help governments and institutions design smart, future-ready policies that drive
+                            investment, economic diversification, and governance reform.</p>
+                        <ul class="service-features" data-stagger-group data-stagger-delay="0.1s">
+                            <li data-stagger-item data-animate="slide-left">Trade and investment policy design</li>
+                            <li data-stagger-item data-animate="slide-left">Public-private partnership (PPP) structuring
+                            </li>
+                            <li data-stagger-item data-animate="slide-left">Economic development strategies</li>
+                            <li data-stagger-item data-animate="slide-left">Regulatory framework analysis</li>
+                            <li data-stagger-item data-animate="slide-left">Institutional reform and capacity building
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-pane" id="communications" data-animate="fade-in">
+                        <h3>Strategic Communications</h3>
+                        <p>We shape narratives that build trust, attract investors, and strengthen brands across
+                            borders.</p>
+                        <ul class="service-features" data-stagger-group data-stagger-delay="0.1s">
+                            <li data-stagger-item data-animate="slide-left">Strategic positioning and brand development
+                            </li>
+                            <li data-stagger-item data-animate="slide-left">Cross-cultural communications and cultural
+                                intelligence training</li>
+                            <li data-stagger-item data-animate="slide-left">Stakeholder engagement and reputation
+                                management</li>
+                            <li data-stagger-item data-animate="slide-left">Media relations and public diplomacy
+                                campaigns</li>
+                            <li data-stagger-item data-animate="slide-left">Digital strategy and thought leadership</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-pane" id="business" data-animate="fade-in">
+                        <h3>Business Facilitation & Investment Advisory</h3>
+                        <p>We make business entry into African markets seamless and sustainable.</p>
+                        <ul class="service-features" data-stagger-group data-stagger-delay="0.1s">
+                            <li data-stagger-item data-animate="slide-left">Market entry strategy and feasibility
+                                analysis</li>
+                            <li data-stagger-item data-animate="slide-left">Investment matchmaking and partnership
+                                development</li>
+                            <li data-stagger-item data-animate="slide-left">Transaction advisory and deal structuring
+                            </li>
+                            <li data-stagger-item data-animate="slide-left">Risk assessment and due diligence</li>
+                            <li data-stagger-item data-animate="slide-left">Supply chain and distribution network
+                                development</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-pane" id="climate" data-animate="fade-in">
+                        <h3>Climate-Smart & ESG Solutions</h3>
+                        <p>We help our clients transition toward sustainability and climate resilience.</p>
+                        <ul class="service-features" data-stagger-group data-stagger-delay="0.1s">
+                            <li data-stagger-item data-animate="slide-left">ESG compliance and carbon credit consulting
+                            </li>
+                            <li data-stagger-item data-animate="slide-left">Renewable energy and green project advisory
+                            </li>
+                            <li data-stagger-item data-animate="slide-left">Climate risk assessment and adaptation
+                                planning</li>
+                            <li data-stagger-item data-animate="slide-left">Sustainable investment frameworks</li>
+                            <li data-stagger-item data-animate="slide-left">Circular economy model development</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-pane" id="ai" data-animate="fade-in">
+                        <h3>AI-Powered Data & Analytics</h3>
+                        <p>We provide intelligence that empowers faster, data-driven decisions.</p>
+                        <ul class="service-features" data-stagger-group data-stagger-delay="0.1s">
+                            <li data-stagger-item data-animate="slide-left">Predictive analytics and market forecasting
+                            </li>
+                            <li data-stagger-item data-animate="slide-left">Investment risk modeling</li>
+                            <li data-stagger-item data-animate="slide-left">Consumer behavior insights</li>
+                            <li data-stagger-item data-animate="slide-left">Automated regulatory tracking</li>
+                            <li data-stagger-item data-animate="slide-left">AI-enabled ESG performance dashboards</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-pane" id="training" data-animate="fade-in">
+                        <h3>Training & Capacity Development</h3>
+                        <p>We strengthen institutional and human capacity through targeted training.</p>
+                        <ul class="service-features" data-stagger-group data-stagger-delay="0.1s">
+                            <li data-stagger-item data-animate="slide-left">Leadership and governance training</li>
+                            <li data-stagger-item data-animate="slide-left">Trade and investment readiness workshops
+                            </li>
+                            <li data-stagger-item data-animate="slide-left">Diaspora entrepreneurship programs</li>
+                            <li data-stagger-item data-animate="slide-left">AI, ESG, and digital transformation training
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose" class="why-choose">
+        <div class="container">
+            <div class="section-header" data-animate="fade-in">
+                <h2 class="section-title">Why Choose TGS</h2>
+                <p class="section-subtitle">Our competitive edge in driving Africa's transformation</p>
+            </div>
+
+            <div class="competitive-edge" data-stagger-group data-stagger-delay="0.1s">
+                <div class="edge-card" data-stagger-item data-animate="scale-up">
+                    <div class="edge-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Diaspora Network Advantage</h3>
+                    <p>We harness the power of the African Diaspora to build authentic partnerships.</p>
+                </div>
+
+                <div class="edge-card" data-stagger-item data-animate="scale-up">
+                    <div class="edge-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Technology Integration</h3>
+                    <p>Our proprietary AI and climate analytics tools enhance speed, accuracy, and transparency.</p>
+                </div>
+
+                <div class="edge-card" data-stagger-item data-animate="scale-up">
+                    <div class="edge-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Dual-Market Expertise</h3>
+                    <p>Deep understanding of both Western and African business environments.</p>
+                </div>
+
+                <div class="edge-card" data-stagger-item data-animate="scale-up">
+                    <div class="edge-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Relationship Capital</h3>
+                    <p>Longstanding networks across governments, development agencies, and private investors.</p>
+                </div>
+
+                <div class="edge-card" data-stagger-item data-animate="scale-up">
+                    <div class="edge-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Rapid Response</h3>
+                    <p>Agile consulting teams capable of on-ground deployment within 72 hours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sectors Section -->
+    <section class="sectors">
+        <div class="container">
+            <div class="section-header" data-animate="fade-in">
+                <h2 class="section-title">Sectors We Serve</h2>
+                <p class="section-subtitle">Partnering with diverse stakeholders across Africa</p>
+            </div>
+
+            <div class="sectors-grid" data-stagger-group data-stagger-delay="0.1s">
+                <div class="sector-item" data-stagger-item data-animate="rotate-in">
+                    <div class="sector-icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h3>Government & Public Institutions</h3>
+                </div>
+
+                <div class="sector-item" data-stagger-item data-animate="rotate-in">
+                    <div class="sector-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Multinational Corporations</h3>
+                </div>
+
+                <div class="sector-item" data-stagger-item data-animate="rotate-in">
+                    <div class="sector-icon">
+                        <i class="fas fa-piggy-bank"></i>
+                    </div>
+                    <h3>Development Finance & Impact Investors</h3>
+                </div>
+
+                <div class="sector-item" data-stagger-item data-animate="rotate-in">
+                    <div class="sector-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Private Equity & Venture Capital Firms</h3>
+                </div>
+
+                <div class="sector-item" data-stagger-item data-animate="rotate-in">
+                    <div class="sector-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>African SMEs & Startups</h3>
+                </div>
+
+                <div class="sector-item" data-stagger-item data-animate="rotate-in">
+                    <div class="sector-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>International NGOs & Foundations</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="impact">
+        <div class="container">
+            <div class="section-header" data-animate="fade-in">
+                <h2 class="section-title">Our Impact</h2>
+                <p class="section-subtitle">We measure success not only in profit but in progress</p>
+            </div>
+
+            <div class="impact-intro" data-animate="fade-in" data-animate-delay="0.2s">
+                <p>By 2028, TGS aims to:</p>
+            </div>
+
+            <div class="impact-goals" data-stagger-group data-stagger-delay="0.2s">
+                <div class="goal-item" data-stagger-item data-animate="scale-up">
+                    <div class="goal-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="goal-number">$500<span>M+</span></div>
+                    <div class="goal-label">Foreign investment into African markets</div>
+                    <div class="goal-progress">
+                        <div class="progress-bar" style="width: 85%"></div>
+                    </div>
+                </div>
+
+                <div class="goal-item" data-stagger-item data-animate="scale-up">
+                    <div class="goal-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="goal-number">10,000<span>+</span></div>
+                    <div class="goal-label">Direct and indirect jobs created</div>
+                    <div class="goal-progress">
+                        <div class="progress-bar" style="width: 70%"></div>
+                    </div>
+                </div>
+
+                <div class="goal-item" data-stagger-item data-animate="scale-up">
+                    <div class="goal-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <div class="goal-number">75<span>%</span></div>
+                    <div class="goal-label">Projects aligned with UN Sustainable Development Goals</div>
+                    <div class="goal-progress">
+                        <div class="progress-bar" style="width: 75%"></div>
+                    </div>
+                </div>
+
+                <div class="goal-item" data-stagger-item data-animate="scale-up">
+                    <div class="goal-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="goal-number">1,000<span>+</span></div>
+                    <div class="goal-label">African professionals and entrepreneurs trained</div>
+                    <div class="goal-progress">
+                        <div class="progress-bar" style="width: 60%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="impact-extra" data-animate="fade-in" data-animate-delay="0.5s">
+                <p>✅ Publish Africa Market Intelligence Reports for global investors</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header" data-animate="fade-in">
+                <h2 class="section-title">Our Team</h2>
+                <p class="section-subtitle">Leadership with over 50 years of combined experience</p>
+            </div>
+
+            <div class="team-intro" data-animate="fade-in" data-animate-delay="0.2s">
+                <p>Our leadership team brings together over 50 years of combined experience in diplomacy, development
+                    finance, and market innovation. They are supported by regional experts and an advisory board
+                    comprising former ambassadors, government ministers, and diaspora business leaders.</p>
+            </div>
+
+            <div class="team-content">
+                <div class="team-leadership" data-animate="fade-in" data-animate-delay="0.3s">
+                    <div class="leader-card">
+                        <div class="leader-image" data-tilt>
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=500&q=80"
+                                alt="Paul K. Kennedy" class="leader-image">
+                            <div class="leader-overlay">
+                                <div class="social-links">
+                                    <a href="#" class="magnetic-btn"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="magnetic-btn"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leader-info">
+                            <h3>Paul K. Kennedy</h3>
+                            <p class="leader-title">Founder & CEO</p>
+                            <div class="leader-bio">
+                                <p>Paul K. Kennedy is the Chief Executive Officer of Transcend Global Solutions (TGS), a
+                                    Washington, D.C.-based international development and trade advisory firm dedicated
+                                    to strengthening Africa's economic resilience and global competitiveness.</p>
+                                <p>With over 15 years of leadership experience spanning public health, international
+                                    development, policy advisement, and strategic partnerships, Mr. Kennedy is widely
+                                    recognized for his visionary leadership and his commitment to Diaspora-driven
+                                    economic transformation across the African continent.</p>
+                            </div>
+                            <div class="leader-achievements">
+                                <h4>Notable Achievements:</h4>
+                                <ul data-stagger-group data-stagger-delay="0.1s">
+                                    <li data-stagger-item data-animate="slide-left">Establishment of the Diaspora
+                                        Investment Access Program</li>
+                                    <li data-stagger-item data-animate="slide-left">Africa Trade Gateway Initiative</li>
+                                    <li data-stagger-item data-animate="slide-left">Policy advisory collaborations with
+                                        ECOWAS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-other" data-stagger-group data-stagger-delay="0.1s">
+                    <div class="team-member" data-stagger-item data-animate="scale-up">
+                        <div class="member-image">
+                            <div class="placeholder-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>Chief Operating Officer</h4>
+                            <p>Operations & Partnerships</p>
+                        </div>
+                    </div>
+
+                    <div class="team-member" data-stagger-item data-animate="scale-up">
+                        <div class="member-image">
+                            <div class="placeholder-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>Chief Technology Officer</h4>
+                            <p>AI & Climate Solutions</p>
+                        </div>
+                    </div>
+
+                    <div class="team-member" data-stagger-item data-animate="scale-up">
+                        <div class="member-image">
+                            <div class="placeholder-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>Managing Director</h4>
+                            <p>Africa Region</p>
+                        </div>
+                    </div>
+
+                    <div class="team-member" data-stagger-item data-animate="scale-up">
+                        <div class="member-image">
+                            <div class="placeholder-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>Managing Director</h4>
+                            <p>Europe/Asia Region</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-cta" data-animate="fade-in" data-animate-delay="0.5s">
+                <a href="#contact" class="btn btn-secondary magnetic-btn">Meet the Team <i
+                        class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnerships Section -->
+    <section class="partnerships">
+        <div class="container">
+            <div class="section-header" data-animate="fade-in">
+                <h2 class="section-title">Partnerships</h2>
+                <p class="section-subtitle">Collaborating with trusted institutions across Africa</p>
+            </div>
+
+            <div class="partnerships-content">
+                <div class="partnerships-text" data-animate="slide-left">
+                    <p>We collaborate with a network of trusted partners and institutions across more than 20 African
+                        countries, including:</p>
+                    <ul class="partners-list" data-stagger-group data-stagger-delay="0.1s">
+                        <li data-stagger-item data-animate="fade-in">Development finance institutions (AfDB, IFC, USAID)
+                        </li>
+                        <li data-stagger-item data-animate="fade-in">Regional economic communities (ECOWAS, SADC, EAC)
+                        </li>
+                        <li data-stagger-item data-animate="fade-in">African chambers of commerce</li>
+                        <li data-stagger-item data-animate="fade-in">Technology and AI innovators</li>
+                        <li data-stagger-item data-animate="fade-in">Diaspora investment networks</li>
+                    </ul>
+                </div>
+
+                <div class="partnerships-cta" data-animate="slide-right">
+                    <p>Interested in partnering with us?</p>
+                    <a href="#contact" class="btn btn-primary ripple">Become a Partner</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News & Insights Section -->
+    <section class="news">
+        <div class="container">
+            <div class="section-header" data-animate="fade-in">
+                <h2 class="section-title">News & Insights</h2>
+                <p class="section-subtitle">Stay informed with the latest from TGS</p>
+            </div>
+
+            <div class="news-content">
+                <div class="news-text" data-animate="slide-left">
+                    <p>From market intelligence to thought leadership. Our editorial team publishes insightful analyses,
+                        investment reports, and diaspora engagement updates shaping Africa's development narrative.</p>
+                </div>
+
+                <div class="news-actions" data-animate="slide-right">
+                    <a href="#" class="btn btn-secondary magnetic-btn">Read Insights</a>
+                    <a href="#" class="btn btn-outline magnetic-btn">Subscribe to Our Newsletter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-animate="fade-in">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">Let's start a conversation</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info" data-animate="slide-left">
+                    <div class="contact-intro">
+                        <p>Whether you're a government agency, investor, or business leader exploring opportunities in
+                            Africa, TGS is your trusted partner for strategic success.</p>
+                    </div>
+
+                    <div class="contact-details" data-stagger-group data-stagger-delay="0.1s">
+                        <div class="contact-item" data-stagger-item data-animate="fade-in">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Headquarters</h4>
+                                <p>Transcend Global Solutions (TGS) Inc.<br>Washington, D.C., USA</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item" data-stagger-item data-animate="fade-in">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>info@tgs-global.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item" data-stagger-item data-animate="fade-in">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>+1 (202) XXX-XXXX</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-media" data-animate="fade-in" data-animate-delay="0.3s">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link magnetic-btn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-link magnetic-btn">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link magnetic-btn">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="social-link magnetic-btn">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form" data-animate="slide-right">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary ripple">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand" data-animate="fade-in">
+                    <div class="logo-orb small">
+                        <div class="logo-core"></div>
+                        <div class="logo-ring"></div>
+                    </div>
+                    <div class="footer-text">
+                        <h3>Transcend Global Solutions</h3>
+                        <p class="footer-tagline">Bridging Global Capital, Innovation, and Africa's Future.</p>
+                    </div>
+                </div>
+
+                <div class="footer-links" data-stagger-group data-stagger-delay="0.1s">
+                    <div class="footer-column" data-stagger-item data-animate="fade-in">
+                        <h4>Quick Links</h4>
+                        <a href="#home">Home</a>
+                        <a href="#about">About Us</a>
+                        <a href="#services">Services</a>
+                        <a href="#team">Our Team</a>
+                    </div>
+
+                    <div class="footer-column" data-stagger-item data-animate="fade-in">
+                        <h4>Services</h4>
+                        <a href="#services">Policy Advisory</a>
+                        <a href="#services">Business Facilitation</a>
+                        <a href="#services">Climate & ESG</a>
+                        <a href="#services">AI & Analytics</a>
+                    </div>
+
+                    <div class="footer-column" data-stagger-item data-animate="fade-in">
+                        <h4>Connect</h4>
+                        <a href="#">News & Insights</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Partnerships</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom" data-animate="fade-in" data-animate-delay="0.3s">
+                <p>&copy; 2023 Transcend Global Solutions (TGS) Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" data-animate="scale-up">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/scroll-effects.js"></script>
+    <script src="js/particles.js"></script>
+</body>
+
+</html>
