@@ -1,9 +1,10 @@
 # 🌐 Transcend Global Solutions Website
 
-[![HTML](https://img.shields.io/badge/HTML-5-orange)](https://developer.mozilla.org/en-US/docs/Web/HTML)  
-[![CSS](https://img.shields.io/badge/CSS-3-blue)](https://developer.mozilla.org/en-US/docs/Web/CSS)  
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)  
+[![HTML](https://img.shields.io/badge/HTML-5-orange)](https://developer.mozilla.org/en-US/docs/Web/HTML) 
+[![CSS](https://img.shields.io/badge/CSS-3-blue)](https://developer.mozilla.org/en-US/docs/Web/CSS) 
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+
 
 A **modern, responsive website** for **Transcend Global Solutions (TGS)** built using **HTML, CSS, and JavaScript**.  
 The website showcases company services, projects, and allows visitors to interact through forms and navigation menus.
