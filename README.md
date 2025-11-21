@@ -52,6 +52,6 @@ The website showcases company services, projects, and allows visitors to interac
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/waqas-gul/tgs-website.git
+   https://github.com/waqas-gul/Transcend-Global-Solutions.git
    cd tgs-website
    ```
